@@ -1,11 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap");
 
+:root{
+--white-color:white;
+--head-color:#262626;
+--black-color:black;
+}
+
 .page-header {
   display: flex;
-  background-color: #262626;
+  background-color: var(--head-color);
   justify-content: space-between;
   padding: 15px 20px;
-  color: white;
+  color: var(--white-color);
   align-items: center;
   flex-wrap: wrap;
 }
@@ -39,7 +45,7 @@
 
 .link {
   text-decoration: none;
-  color: white;
+  color: var(--white-color);
 }
 
 .link-margin {
@@ -54,21 +60,21 @@
 .link-button {
   text-decoration: none;
   padding: 10px 20px;
-  border: 2px solid white;
+  border: 2px solid var(--white-color);
   border-radius: 4px;
-  color: white;
-  background-color: #262626;
+  color: var(--white-color);
+  background-color: var(--head-color);
   font-size: 10px;
 }
 
 .link-button:hover {
-  background-color: white;
-  color: black;
+  background-color: var(--white-color);
+  color: var(--black-color);
 }
 
 .images {
-  height: 100vh;
-  background-image: url(../images/Sea.jpg);
+  min-height: 100vh;
+  background-image: url("../images/Sea.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
